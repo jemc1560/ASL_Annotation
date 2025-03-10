@@ -1,0 +1,16 @@
+.header {
+    -unity-font-definition: url("project://database/Assets/Pixel%20Font%20-%20Tripfive/Fonts/Tripfive.fontsettings?fileID=12800000&guid=29821db8324231f4481e730bf6288b9c&type=2#Tripfive");
+    -unity-text-align: upper-center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-size: 48px;
+    width: 220px;
+    height: 60px;
+    top: 16px;
+}
+
+.button {
+    width: 220px;
+    height: 60px;
+}
