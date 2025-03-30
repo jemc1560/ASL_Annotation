@@ -23,6 +23,6 @@ public class EdwinMovement : MonoBehaviour
         */
         float moveHori = dynamicJoystick.Horizontal;
         float moveVert = dynamicJoystick.Vertical;
-        transform.Translate(new Vector3(moveHori * speed * Time.deltaTime, moveVert * speed * Time.deltaTime, 0f));
+        transform.Translate(new Vector3((int) moveHori * speed * Time.deltaTime, (int) moveVert * speed * Time.deltaTime, 0f));
     }
 }
