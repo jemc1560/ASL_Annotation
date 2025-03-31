@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EdwinMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
+    [SerializeField] private float speed = 3f;
     [SerializeField] public FixedJoystick dynamicJoystick;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
