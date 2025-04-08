@@ -13,6 +13,11 @@ public class EdwinMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //moveEdwin();
+    }
+
+    void FixedUpdate()
+    {
         moveEdwin();
     }
 
