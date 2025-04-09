@@ -18,6 +18,8 @@ public class ClassroomMove : MonoBehaviour
         {
             Debug.Log("Switching Scene to " + sceneBuildIndex);
             SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+            Scene activeScene = SceneManager.GetActiveScene();
+            Debug.Log("Current Active Scene: " + activeScene.name);
         }
     }
 }
