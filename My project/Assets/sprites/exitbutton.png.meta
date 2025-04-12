@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: de1ba87f3383f6c45a466ba9305707d2
+guid: 131aa3632e993fc4f894a47ff9ec5a94
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -490242242413125318
-    second: playbutton_0
+      213: -7449421279380016608
+    second: exitbutton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
-  spriteBorder: {x: 190, y: 50, z: 116, w: 111}
+  spriteBorder: {x: 159, y: 55, z: 146, w: 110}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: playbutton_0
+      name: exitbutton_0
       rect:
         serializedVersion: 2
-        x: 190
-        y: 50
-        width: 14
-        height: 20
+        x: 158
+        y: 54
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a312317274f4239f0800000000000000
-      internalID: -490242242413125318
+      spriteID: 022715ca0d65e9890800000000000000
+      internalID: -7449421279380016608
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      playbutton_0: -490242242413125318
+      exitbutton_0: -7449421279380016608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
