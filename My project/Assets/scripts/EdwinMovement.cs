@@ -20,7 +20,9 @@ public class EdwinMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveEdwin();
+        if(!gameState.gamePaused){
+            moveEdwin();
+        }
     }
 
     void moveEdwin(){

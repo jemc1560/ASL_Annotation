@@ -10,8 +10,6 @@ public class onclick : MonoBehaviour
     {
         button_sprite  = GetComponent<SpriteRenderer>();
         box_collide = button_sprite.GetComponent<BoxCollider2D>();
-
-
     }
 
     // Update is called once per frame
