@@ -16,6 +16,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public static void exitgame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     // Update is called once per frame
     void Update()
     {
