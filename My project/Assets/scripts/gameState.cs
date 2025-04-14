@@ -8,7 +8,6 @@ public static class gameState{
     
     public static void togglePause(){
         gamePaused = !gamePaused;
-
     }
 }
 
