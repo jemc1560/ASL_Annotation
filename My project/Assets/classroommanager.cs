@@ -24,6 +24,7 @@ public class classroommanager : MonoBehaviour
     public RawImage screen;
 
     public GameObject manager;
+    public GameObject popup;
 
     public GameObject cbg;
     // actual images
@@ -38,6 +39,8 @@ public class classroommanager : MonoBehaviour
 
     public String choice;
 
+    public TMP_Text label;
+
     public string[] signs;
 
     private int fast = 0;
@@ -48,6 +51,8 @@ public class classroommanager : MonoBehaviour
         cbg.GetComponent<SpriteRenderer>().sprite = ogbg;
         index = 0;
         choice = null;
+        
+        label.GetComponent<TMP_Text>().text = "Sign: " + popup.GetComponent<Popup>().GetSign(index);
         videoPlayer.clip = videoClip[index];
         videoPlayer.Prepare();
 
@@ -56,6 +61,12 @@ public class classroommanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+
+    void startit()
+    {
+        popup.GetComponent<Popup>().onstart();
+        return;
     }
 
     public void setChoice(Button b)
@@ -112,23 +123,12 @@ public class classroommanager : MonoBehaviour
             screen.gameObject.SetActive(false);
             cbg.GetComponent<SpriteRenderer>().sprite = ogbg;
             videoPlayer.clip = videoClip[index];
+            label.GetComponent<TMP_Text>().text = "Sign: " + popup.GetComponent<Popup>().GetSign(index);
             videoPlayer.Prepare();
         }
     }
 
-    public void playback()
-    {
-        if(videoPlayer.canSetPlaybackSpeed)
-        {
-            char[] curspeed = speed.gameObject.GetComponentInChildren<TMP_Text>().text.ToCharArray();
-            Debug.Log("speed"+ curspeed); 
-            float numspeed = int.Parse(curspeed.Skip(1).ToString());
-            Debug.Log(numspeed);
-            Debug.Log("x" + Convert.ToString((numspeed + 1) % 3));
-            speed.gameObject.GetComponentInChildren<Text>().text = "x"+ Convert.ToString((numspeed + 0.5) % 3);
-            videoPlayer.playbackSpeed = (float)((numspeed + 0.5)% 3);
-        }
-    }
+    
 
     public void speedUp(){
         if(fast == -1){
