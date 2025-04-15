@@ -174,10 +174,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.2187652
-    y: 0
-    width: 0.5652244
-    height: 0.6408623
+    x: 0
+    y: 0.019704435
+    width: 0.99999994
+    height: 0.9609606
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -555,7 +555,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1210896388}
         m_TargetAssemblyTypeName: classroommanager, Assembly-CSharp
-        m_MethodName: playback
+        m_MethodName: speedUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

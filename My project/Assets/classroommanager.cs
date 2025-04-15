@@ -39,6 +39,8 @@ public class classroommanager : MonoBehaviour
     public String choice;
 
     public string[] signs;
+
+    private int fast = 0;
     void Start()
     {
         isPlaying = false;
@@ -125,6 +127,24 @@ public class classroommanager : MonoBehaviour
             Debug.Log("x" + Convert.ToString((numspeed + 1) % 3));
             speed.gameObject.GetComponentInChildren<Text>().text = "x"+ Convert.ToString((numspeed + 0.5) % 3);
             videoPlayer.playbackSpeed = (float)((numspeed + 0.5)% 3);
+        }
+    }
+
+    public void speedUp(){
+        if(fast == -1){
+            fast = 0;
+            videoPlayer.playbackSpeed = 1.0f;
+            speed.GetComponentInChildren<TextMeshProUGUI>().text = "x1";
+        }
+        else if (fast == 0){
+            fast = 1;
+            videoPlayer.playbackSpeed = 2.0f;
+            speed.GetComponentInChildren<TextMeshProUGUI>().text = "x2";
+        }
+        else{
+            fast = -1;
+            videoPlayer.playbackSpeed = 0.5f;
+            speed.GetComponentInChildren<TextMeshProUGUI>().text = "x.5";
         }
     }
 }
