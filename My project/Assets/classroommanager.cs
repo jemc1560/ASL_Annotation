@@ -40,6 +40,7 @@ public class classroommanager : MonoBehaviour
     public String choice;
 
     public TMP_Text label;
+    public TMP_Text error;
 
     public string[] signs;
 
@@ -51,7 +52,9 @@ public class classroommanager : MonoBehaviour
         cbg.GetComponent<SpriteRenderer>().sprite = ogbg;
         index = 0;
         choice = null;
-        
+        error.gameObject.SetActive(false);
+        label.GetComponent<TMP_Text>().text = "";
+
         label.GetComponent<TMP_Text>().text = "Sign: " + popup.GetComponent<Popup>().GetSign(index);
         videoPlayer.clip = videoClip[index];
         videoPlayer.Prepare();
@@ -99,9 +102,13 @@ public class classroommanager : MonoBehaviour
         if (choice == null)
         {
             //give warning to make a choice 
+            error.gameObject.SetActive(true);
+            error.GetComponent<TMP_Text>().text = "please select option";
+
         } else
         {
             //save result to array
+            error.gameObject.SetActive(false);
             manager.GetComponent<DataManager>().AddAnnotatedVideo(new AnnotatedVideo(index, choice));
 
 
@@ -120,6 +127,7 @@ public class classroommanager : MonoBehaviour
             index += 1;
             isPlaying = false;
             videoPlayer.Stop();
+            choice = null;
             screen.gameObject.SetActive(false);
             cbg.GetComponent<SpriteRenderer>().sprite = ogbg;
             videoPlayer.clip = videoClip[index];

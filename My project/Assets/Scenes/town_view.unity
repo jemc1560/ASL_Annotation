@@ -732,7 +732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &458993662
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1855,15 +1855,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0009337068
+    x: 0
     y: 0
-    width: 0.9971989
-    height: 0.99813783
+    width: 1
+    height: 1
   near clip plane: 0.01
   far clip plane: 1000
   field of view: 27.9
   orthographic: 1
-  orthographic size: 4.1875
+  orthographic size: 4.6875
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1888,7 +1888,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.039909, y: 2.8292398, z: -10}
+  m_LocalPosition: {x: 8.039845, y: 2.0167499, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9741,8 +9741,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: save and exit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f5640b9dcb034d49a72672acfdef48d, type: 2}
-  m_sharedMaterial: {fileID: 8832454616337887330, guid: 4f5640b9dcb034d49a72672acfdef48d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13226,8 +13226,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: resume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f5640b9dcb034d49a72672acfdef48d, type: 2}
-  m_sharedMaterial: {fileID: 8832454616337887330, guid: 4f5640b9dcb034d49a72672acfdef48d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13337,7 +13337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 458993661}
   dialogText: {fileID: 189108212}
-  dialog: HAHAHAHA! You seem lost. Go read the sign across from me. HAHAHAHAHA!
+  dialog: Hi You must be Edwin. Better get to school before your late! HAHAHAHAHA
   dialogActive: 0
 --- !u!61 &1446705825
 BoxCollider2D:
@@ -13518,7 +13518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1544405361
 RectTransform:
   m_ObjectHideFlags: 0
