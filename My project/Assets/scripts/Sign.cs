@@ -19,19 +19,22 @@ public class Sign : MonoBehaviour
     {
         if (dialogActive)
         {
-            // Tap on screen (touch device)
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+    #if UNITY_EDITOR
+            // Simulate tap with mouse in the editor
+            if (Input.GetMouseButtonDown(0))
             {
                 CloseDialog();
             }
-
-            // Press spacebar (keyboard)
-            if (Input.GetKeyDown(KeyCode.Space))
+    #else
+            // Real touch input on phone
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
             {
                 CloseDialog();
             }
+    #endif
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
