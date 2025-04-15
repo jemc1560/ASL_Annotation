@@ -1855,15 +1855,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+    x: 0.001776199
+    y: 0.0031496063
+    width: 0.9964476
+    height: 0.992126
   near clip plane: 0.01
   far clip plane: 1000
   field of view: 27.9
   orthographic: 1
-  orthographic size: 4.6875
+  orthographic size: 6.5625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1888,7 +1888,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.039845, y: 2.0167499, z: -10}
+  m_LocalPosition: {x: 6.3477535, y: 0.4542799, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13837,8 +13837,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Paused
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f5640b9dcb034d49a72672acfdef48d, type: 2}
-  m_sharedMaterial: {fileID: 8832454616337887330, guid: 4f5640b9dcb034d49a72672acfdef48d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
