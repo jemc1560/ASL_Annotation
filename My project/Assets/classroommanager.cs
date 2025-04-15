@@ -89,7 +89,7 @@ public class classroommanager : MonoBehaviour
         } else
         {
             //save result to array
-            manager.GetComponent<DataManager>().AddAnnotatedVideo(new AnnotatedVideo(videoClip[index], choice));
+            manager.GetComponent<DataManager>().AddAnnotatedVideo(new AnnotatedVideo(index, choice));
 
 
             if ((index + 2) == videoClip.Length)
@@ -100,6 +100,8 @@ public class classroommanager : MonoBehaviour
             else if ((index + 1) == videoClip.Length)
             {
                 //close scene 
+
+                SceneController.entergame();
             }
             play.gameObject.SetActive(true);
             index += 1;

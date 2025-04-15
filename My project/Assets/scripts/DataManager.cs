@@ -7,12 +7,13 @@ using UnityEngine.Video;
 public class AnnotatedVideo
 {
     // eg properties; you can edit to match the actual data
-    public VideoClip videoID;
+    
+    public int index;
     public string annotation;  // could store associated annotation info
 
-    public AnnotatedVideo(VideoClip videoID, string annotation)
+    public AnnotatedVideo(int index, string annotation)
     {
-        this.videoID = videoID;
+        this.index = index;
         this.annotation = annotation;
     }
 }
@@ -35,14 +36,14 @@ public class DataManager : MonoBehaviour
         {
             Instance = this;
             // persist this obj through scene loads
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
             saveFilePath = Path.Combine(Application.persistentDataPath, "annotatedVideos.json");
             // try to load any prev saved data when the game starts
             LoadData();
         }
         else
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
