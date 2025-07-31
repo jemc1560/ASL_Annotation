@@ -1,4 +1,4 @@
-# MUC_Project
+# Mobile and Ubiquitous Computing Project - Edwin's ASL Adventures 
 In this game, you play as Edwin the racoon to help teach your students ASL while also helping to classify ASL video data. Our goal was to develop a Unity-based 2D RPG game that gamifies ASL annotation tasks, making the process more enjoyable and accessible, especially for users without prior ASL knowledge.
 ##
 Our final paper: 
